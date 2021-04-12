@@ -1,0 +1,98 @@
+body, html {
+    height: 100%;
+}
+
+
+
+.inicio {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: contents;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-box{
+    height: 1000px;
+    padding: 40px;
+    background: rgb(48,218,170);
+    background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
+    text-align: center;
+}
+
+.form-title{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-box input[type= "text"],
+.form-box input[type= "nombre"],
+.form-box input[type= "apellido"],
+.form-box input[type= "nombre_usuario"],
+.form-box input[type= "password"],
+.form-box input[type= "rut"],
+.form-box input[type= "correo"],
+.form-box input[type= "telefono"],
+.form-box input[type= "comuna"],
+.form-box input[type= "direccion"],
+.form-box input[type= "numero"],
+.form-box button[type= "submit"]{
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid black;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type= "nombre"]:focus,
+.form-box input[type= "apellido"]:focus,
+.form-box input[type= "nombre_usuario"]:focus,
+.form-box input[type= "password"]:focus,
+.form-box input[type= "rut"]:focus,
+.form-box input[type= "correo"]:focus,
+.form-box input[type= "telefono"]:focus,
+.form-box input[type= "comuna"]:focus,
+.form-box input[type= "direccion"]:focus,
+.form-box input[type= "numero"]:focus{
+    width: 280px;
+    border-color: black;
+}
+
+
+.form-box button[type="submit"]{
+    border: 0;
+    color:black;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+.form-box button[type="submit"]:hover{
+    background: cyan;
+}
+
+.borderForm{
+    border: 2px solid;
+    background: lightblue;
+    width: 552px;
+    height: 20em;
+    display: inline-block;
+}
+.borderFormRegister{
+    border: 2px solid;
+    background: lightblue;
+    width: 552px;
+    display: inline-block;
+}
