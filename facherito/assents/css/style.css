@@ -96,3 +96,19 @@ body, html {
     width: 552px;
     display: inline-block;
 }
+.card{
+    height: 100%;    
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.card-body{
+    width: auto;
+    background: rgba(0, 0, 0, 0.100);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container-fluid{
+    background: rgb(48,218,170);
+    background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
+}
