@@ -17,10 +17,7 @@ body, html {
 }
 
 .form-box{
-    height: 1000px;
-    padding: 40px;
-    background: rgb(48,218,170);
-    background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
+    display: inline-block;
     text-align: center;
 }
 
@@ -86,15 +83,16 @@ body, html {
 .borderForm{
     border: 2px solid;
     background: lightblue;
-    width: 552px;
-    height: 20em;
+    width: 780px;
+    height: 380px;
     display: inline-block;
+    margin: 20px;
 }
 .borderFormRegister{
     border: 2px solid;
     background: lightblue;
     width: 552px;
-    display: inline-block;
+    display: block;
 }
 .card{
     height: 100%;    
@@ -110,5 +108,9 @@ body, html {
 }
 .container-fluid{
     background: rgb(48,218,170);
+    background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
+}
+
+.inicioBackground{
     background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
 }
