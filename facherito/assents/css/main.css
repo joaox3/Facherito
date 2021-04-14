@@ -2,6 +2,7 @@
     margin:2em;
     text-align: center;
     font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .logo{
@@ -19,7 +20,7 @@ p{
     border-bottom: 5px inset;
 }
 .contornoFlex{
-    border-top: 5px inset;
+    background-color: #4f4f4f;
 }
 
 .dropbtn {
@@ -63,4 +64,37 @@ p{
   }
   .foter{
     font-size: 20px;
+
+  }
+  .separacionContainer{
+    padding:5px;
+  }
+
+  .separacion{
+    padding: 3px;
+  }
+
+  .cardHeigth{
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+  }
+  .foterMain{
+    background-color: #A4A4A2!important;
+  }
+  @media screen and (max-width: 600px) {
+      .desaparecer{
+      display:none;
+      visibility:hidden
+      }
+    }
+  .aHeader{
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  .carouselImagen{
+    width: 70%;
+    display: inline-flex;
+    left: 14.5%;
   }
