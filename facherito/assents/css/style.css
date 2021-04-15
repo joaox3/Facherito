@@ -112,3 +112,19 @@ body, html {
     background: rgb(48,218,170);
     background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
 }
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.table-cont{
+    border-collapse: collapse;
+    width: 100%;
+}
+.td-cont{
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+.tr-cont{
+    background-color: lightgray;
+}
