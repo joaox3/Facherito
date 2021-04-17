@@ -17,7 +17,10 @@ body, html {
 }
 
 .form-box{
-    display: inline-block;
+    height: 1000px;
+    padding: 40px;
+    background: rgb(48,218,170);
+    background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
     text-align: center;
 }
 
@@ -83,16 +86,15 @@ body, html {
 .borderForm{
     border: 2px solid;
     background: lightblue;
-    width: 780px;
-    height: 380px;
+    width: 552px;
+    height: 20em;
     display: inline-block;
-    margin: 20px;
 }
 .borderFormRegister{
     border: 2px solid;
     background: lightblue;
     width: 552px;
-    display: block;
+    display: inline-block;
 }
 .card{
     height: 100%;    
@@ -106,11 +108,23 @@ body, html {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.container-fluid{
+#fondoColor{
     background: rgb(48,218,170);
-    background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
+    padding-bottom: 10px ;
 }
-
-.inicioBackground{
-    background: linear-gradient(90deg, rgba(48,218,170,1) 54%, rgba(40,176,203,1) 80%);
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.table-cont{
+    border-collapse: collapse;
+    width: 100%;
+}
+.td-cont{
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+.tr-cont{
+    background-color: lightgray;
 }
