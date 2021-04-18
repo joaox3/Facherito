@@ -128,3 +128,26 @@ body, html {
 .tr-cont{
     background-color: lightgray;
 }
+/*--------------------- estilo base politica y conocenos----------------*/
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  
+}
+h1, h2, h3, h4, h5, h6 ¨{
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column {
+    width: 100%;
+}
