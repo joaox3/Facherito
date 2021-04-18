@@ -334,3 +334,29 @@ h1, h2, h3, h4, h5, h6 ¨{
     }
     
 }
+.contenedor-caja{
+    width: 1170px;
+    height: 640px;
+    display: flex;
+}
+.primera-caja{
+    width: 570px;
+    height: 640px;
+    background:url("https://cdn.dynamicyield.com/api/8767771/images/186e49b6e647c__ONSITE-summer-mujer.png")
+}
+.segunda-caja{
+    width: 570px;
+    height: 640px;
+    background: url("https://cdn.dynamicyield.com/api/8767771/images/30566d1d2c52a__ONSITE-summer-hombre.png");
+    margin-left: 30px;
+}
+#texto-dos {
+    color: white;
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    text-align: center;
+}
