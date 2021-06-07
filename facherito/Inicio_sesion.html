@@ -7,32 +7,41 @@
     <link rel='stylesheet' media="screen" href='assents/bootstrap/css/bootstrap.css'> 
     <link rel="stylesheet" href="assents/css/style.scss">
     <link rel="stylesheet" href="assents/css/Iniciar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
 </head>
-<header class="contorno">
-  <div class="justify-content-end titulo">
-    <a href="./Main.html"><img class="logo" src="assents/images/logoFacherito.png"  align="left"></a>
-  </div>
-    <div class="d-flex bd-highlight mb-2">
-      <div class="dropdown">
-        <button class="dropbtn btn btn-secondary dropdown-toggle" style="margin: auto;">
-          Sección
-        </button>
-        <div class="dropdown-content">
-          <a  href="./catalogo.html">Zapatillas</a>
-          <a href="./catalogo.html">Gorras</a>
-          <a href="./catalogo.html">Poleras</a>
-          <a href="./catalogo.html">Polerones</a>
-          <a href="./catalogo.html">Pantalones</a>
-          <a href="./catalogo.html">Busos</a>
+  <header class="contorno">
+        <div class="justify-content-end titulo">
+          <a href="./Main.html"><img class="logo" src="assents/images/logoFacherito.png"  align="left"></a>
         </div>
-      </div>
-      <div class="p-2 bd-highlight secondary"><a href="./conocenos.html"> Conócenos</a></div>
-      <div class="p-2 bd-highlight"><a href="./politicas.html"> Póliticas y servicios</a></div>
-      <div class="ml-auto p-2 bd-highlight"><a href="./Inicio_sesion.html"> Ingresar</a> </div>
-      <div class="p-2 bd-highlight"><a href="./Inicio_sesion.html"> Registrarse </a>
-      </div>
-    </div>
-</header>    
+          <div class="d-flex bd-highlight mb-2">
+            <div class="dropdown">
+              <button class="dropbtn btn btn-secondary dropdown-toggle">
+                Sección
+              </button>
+              <div class="dropdown-content">
+                <a  href="./catalogo.html">Zapatillas</a>
+                <a href="./catalogo.html">Gorras</a>
+                <a href="./catalogo.html">Poleras</a>
+                <a href="./catalogo.html">Polerones</a>
+                <a href="./catalogo.html">Pantalones</a>
+                <a href="./catalogo.html">Busos</a>
+              </div>
+            </div>
+            <div class="p-2 bd-highlight secondary"><a href="./conocenos.html"> Conócenos</a></div>
+            <div class="p-2 bd-highlight"><a href="./politicas.html"> Póliticas y servicios</a></div>
+            <div class="p-2 bd-highlight"><a href="./contacto.html"> Contacto</a></div>
+
+            <div class="ml-auto p-2 bd-highlight">
+              <a href="./Inicio_sesion.html"> Ingresar</a>
+            </div>
+            <div class="p-2 bd-highlight">
+              <a href="./Inicio_sesion.html"> Registrarse </a>
+            </div>
+
+          </div>
+    </header> 
 
 
 <body class="inicio">
@@ -48,12 +57,12 @@
                       <!-- to error: add class "has-danger" -->
                       <div class="form-group">
                           <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="email" name="email" placeholder="ejemplo@direccion de correo.cl" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp" required />
                       </div>
                       <div class="form-group">
                           <label for="exampleInputPassword1">Password</label>
                           <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
-                          <input type="password" class="form-control form-control-sm imputini" id="exampleInputPassword1">
+                          <input type="password" name="pass" placeholder="Password" class="form-control form-control-sm imputini" id="exampleInputPassword1" minlength="11" required />
                       </div>
                       <button type="submit" class="btn btn-primary btn-block imputini">Sign in</button>
                   </form>
@@ -68,31 +77,43 @@
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
                 <form>
                     <!-- to error: add class "has-danger" -->
-                    <div class="form-group ">
-                        <label for="exampleInputEmail1">Nombre Completo</label>
-                        <input type="email" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    
+                    <div class="form-group">
+                      <div class="container">
+                        <div class="row"> 
+                          <div class="col-md-20">               
+                            <label for="exampleInputEmail1">Nombre y Apellido</label>
+                            <div class="input-group">
+                            <input type="nombre" name="nombre" Placeholder="Por ejemplo, Luis" minlength="4" maxlength="30" class="form-control form-control-sm imputini-nombre" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                            <span class="input-group-addon">-</span>
+                            <input type="apellido" name="apellido" Placeholder="Por ejemplo, Diaz" minlength="4" maxlength="30" class="form-control form-control-sm imputini-apellido" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                          </div>
+                         </div> 
+                      </div>  
                     </div>
+                  </div>
+                    
                     <div class="form-group">
                       <label for="exampleInputEmail1">Ciudad</label>
-                      <input type="email" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
+                      <input type="ciudad" name="ciudad" Placeholder="Por ejemplo, Santiago" minlength="4" maxlength="30" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                    </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Comuna</label>
-                      <input type="email" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Calle</label>
-                    <input type="email" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
+                      <input type="comuna" name="comuna" Placeholder="Por ejemplo, Santiago Centro" minlength="4" maxlength="30" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Calle</label>
+                      <input type="calle" name="calle" Placeholder="Por ejemplo, Gran Avenida José Miguel Carrera" minlength="4" maxlength="30" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                    </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Correo</label>
-                      <input type="email" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
+                      <input type="email" name="email" placeholder="ejemplo@direccion de correo.cl" class="form-control form-control-sm imputini" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="password" class="form-control form-control-sm imputini" id="exampleInputPassword1">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block imputini">Sign in</button>
+                        <input type="password" name="pass" placeholder="Password" class="form-control form-control-sm imputini" id="exampleInputPassword1" minlength="11" required />
+                      </div>
+                    <button type="submit" class="btn btn-primary btn-block imputini">Sign up</button>
                 </form>
             </div>
             </div>
